@@ -5,21 +5,21 @@ metadata:
   namespace: gateway
 spec:
   addresses:
-  - type: IPAddress
-    value: 192.168.101.21
+    - type: IPAddress
+      value: 192.168.101.21
   gatewayClassName: cilium
   listeners:
     - name: http
       protocol: HTTP
       port: 80
-      hostname: "*.vanillax.xyz"
+      hostname: "*.yasha.at"
       allowedRoutes:
         namespaces:
           from: All
     - name: https
       protocol: HTTPS
       port: 443
-      hostname: "*.vanillax.xyz"
+      hostname: "*.yasha.at"
       tls:
         certificateRefs:
           - name: cert-vanillax
